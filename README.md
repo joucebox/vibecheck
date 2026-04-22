@@ -1,6 +1,6 @@
 # RMP for Cornell Roster
 
-A Chrome extension that injects Rate My Professors ratings inline on the [Cornell Course Roster](https://classes.cornell.edu/browse/roster/).
+A Chrome extension that injects Rate My Professors ratings inline on the [Cornell Course Roster](https://classes.cornell.edu/browse/roster/FA26).
 
 ## How it works
 
