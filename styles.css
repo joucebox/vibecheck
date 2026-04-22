@@ -1,0 +1,46 @@
+.rmp-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 600;
+  vertical-align: middle;
+  background-color: var(--rmp-color, #9e9e9e);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.rmp-badge--loading {
+  background-color: #bdbdbd;
+  animation: rmp-pulse 1s infinite ease-in-out;
+}
+
+.rmp-badge--none {
+  background-color: #9e9e9e;
+}
+
+.rmp-badge__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rmp-badge__link:hover {
+  text-decoration: underline;
+}
+
+.rmp-badge__count {
+  margin-left: 4px;
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+.rmp-row {
+  margin-top: 2px;
+  font-size: 0.9em;
+}
+
+@keyframes rmp-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}

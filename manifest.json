@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "RMP for Cornell Roster",
+  "version": "1.0.0",
+  "description": "Shows Rate My Professor scores inline on the Cornell course roster.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://classes.cornell.edu/*",
+    "https://www.ratemyprofessors.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://classes.cornell.edu/browse/roster/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "RMP for Cornell Roster"
+  }
+}
